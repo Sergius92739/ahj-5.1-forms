@@ -51,7 +51,7 @@ describe('Credit Card Validator form', () => {
       const buttonEl = await page.$('.component__button');
       const button = await buttonEl.$('.button');
       button.click();
-      await page.waitForFunction(() => document.body.lastElementChild.classList.length > 2)
+      await page.waitForFunction(() => document.body.lastElementChild.classList.length > 2);
     });
   });
 });

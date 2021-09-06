@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from '../Button';
 
 const button = new Button('Нажми на меня');
 button.bindToDOM(document.body);
@@ -11,9 +11,9 @@ test('Метод creatButton должен создать и вставить э�
 
 test('bindToDOM должен выбростить ошибку', () => {
   expect(() => button.bindToDOM(null)).toThrow();
-})
+});
 
 test('checkBinding должен выбростить ошибку', () => {
   button.container = null;
   expect(() => button.checkBinding()).toThrow();
-})
+});

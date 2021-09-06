@@ -11,9 +11,9 @@ test('Метод creatButton должен создать и вставить э�
 
 test('bindToDOM должен выбростить ошибку', () => {
   expect(() => tooltip.bindToDOM(null)).toThrow();
-})
+});
 
 test('checkBinding должен выбростить ошибку', () => {
   tooltip.container = null;
   expect(() => tooltip.checkBinding()).toThrow();
-})
+});
