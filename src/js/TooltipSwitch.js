@@ -30,7 +30,7 @@ export default class TooltipSwitch {
     this.tooltip.component.classList.toggle('d_none');
     const coordsTarget = targetElem.getBoundingClientRect();
     const coordsTooltip = this.tooltip.component.getBoundingClientRect();
-    this.tooltip.component.style.bottom = `${coordsTarget.top + coordsTarget.height}px`;
+    this.tooltip.component.style.bottom = `${coordsTarget.top + coordsTarget.height + 7}px`;
     this.tooltip.component.style.left = `${coordsTarget.left - (coordsTooltip.width / 2 - coordsTarget.width / 2)}px`;
     setTimeout(() => {
       this.tooltip.component.classList.add('d_none');
